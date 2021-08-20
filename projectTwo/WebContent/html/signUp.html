@@ -1,0 +1,135 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<title>
+		Registration
+	</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		.jumbotron{background-color: #6b6bc7}
+		.bg-grey {background-color: #f6f6f6}
+		.bg-darkgrey{background: #FFE4B5}
+	</style>
+	</head>
+	<body>
+		
+		<div class="container">
+		<div class="jumbotron text-center">
+		<marquee scrollamount= "10" direction="left" behaviour="scroll">
+		<img src="images/3.jpg" class="img-rounded" align="middle" alt="Cinque Terre" width="800px" height="300px">
+		</marquee>
+		</div>
+			<div class="container-fluid bg-grey">
+			<form name="signUp"  action="/projectTwo/signUp" method="post">
+				
+				<div class="form-group">
+				<legend>
+				<H3 class="text-center"><B>SIGN UP</B></H3>
+				</legend>
+				<br>
+				<label class="control-label col-sm-3" for="UserName">User Name :</label>
+				<div class="col-sm-6">
+					<input type="text" name="userName" class="form-control" placeholder="Enter your User Name" required>
+				</div>
+				<br>
+				<br>
+				<br>
+				<label class="control-label col-sm-3" for="password">Password :</label>
+				<div class="col-sm-6">
+					<input type="password" name="password" class="form-control" placeholder="Enter your Password" required>
+				</div>
+				<br>
+				<br>
+				<br>
+				<label class="control-label col-sm-3" for="firstName">First Name :</label>
+				<div class="col-sm-6">
+					<input type="text" name="firstName" class="form-control" placeholder="Enter your First Name" required>
+				</div>
+				<br>
+				<br>
+				<br>
+				<label class="control-label col-sm-3" for="middleName">Middle Name :</label>
+				<div class="col-sm-6">
+					<input type="text" name="middleName" class="form-control" placeholder="Enter your Middle Name" required>
+				</div>
+				<br>
+				<br>
+				<br>
+				<label class="control-label col-sm-3" for="lastName">Last Name :</label>
+				<div class="col-sm-6">
+					<input type="text" name="lastName" class="form-control" placeholder="Enter your Last Name" required>
+				</div>
+				<br>
+				<br>
+				<br>
+				<label class="control-label col-sm-3" for="age">Age :</label>
+				<div class="col-sm-6">
+					<input type="text" name="age" class="form-control" placeholder="Enter your Age" required>
+				</div>
+				<br>
+				<br>
+				<br>
+				<label class="control-label col-sm-3" for="designation">Designation :</label>
+				<div class="col-sm-6">
+					<input type="text" name="designation" class="form-control" placeholder="Enter your Designation" required>
+				</div>
+				<br>
+				<br>
+				<br>
+				<label class="control-label col-sm-3" for="role">Role :</label>
+				<div class="col-sm-6">	
+					<input type="text" name="role" class="form-control" placeholder="Enter your Role" required>
+				</div>
+				<br>
+				<br>
+				<br>
+			    <label class="control-label col-sm-3" for="salary">Salary :</label>
+			    <div class="col-sm-6">
+			    	<input type="text" name="salary" class="form-control" placeholder="Enter your Salary" required>
+				</div>
+				<br>
+				<br>
+				<br>
+				<label class="control-label col-sm-3" for="emailId">Email ID :</label>
+				<div class="col-sm-6">
+					<input type="email" name="emailId" class="form-control" placeholder="Enter your Email ID" required>
+				</div>
+				<br>
+				<br>
+				<br>
+				<label class="control-label col-sm-3" for="contactDetails">Contact Details :</label>
+				<div class="col-sm-6">
+					<input type="tel" name="contactDetails" class="form-control" placeholder="Enter your Contact Details" required>
+				</div>
+				<br>
+				<br>
+				<br>
+				<div class="col-sm- 12">
+					<center><button type="submit" class="btn btn-default">Submit</button></center>
+				</div>
+				</div>
+				</div>
+				<br>
+				<br>
+				<div id="contact us" class="container-fluid bg-darkgrey">
+				<h3 class="text-center">CONTACT US</h3>
+				<div class="col-sm-8">
+				<p>Contact us, we will get back to you within 24 hours</p>
+				<p><span class="glyphicon glyphicon-map-marker"> Hyderabad,INDIA</span></p>
+				<p><span class="glyphicon glyphicon-phone"> +91000000000</span></p>
+				<p><span class="glyphicon glyphicon-envolope"> mymail@mail.com</span></p>	
+				</div>	
+				<textarea class="form-control" id="commments" placeholder="commments" rows="5"></textarea>
+				<br>
+				<br>
+				</div>
+
+			</form>	
+			</div>
+		
+	</body>
+	</html>

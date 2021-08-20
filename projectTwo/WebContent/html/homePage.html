@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome page</title>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		input[type = text]{width:200px;
+			box-sizing: border-box;
+			box-shadow: 15px 15px 10px #696969;
+			border: 5px solid #4B0082;
+			border-radius:25px;
+			font-size: 16px background-color:white;
+			background-image: url('C:\Documents and Settings\admin.CAPRUSIT7\My Documents\MyWorks\essentials\search.jpg'); 
+			background-position: 10px 10px; 
+			padding :12px 20px 12px 40px;
+			background-repeat: no-repeat;
+			
+			-webkit-transition: width 0.4s ease-in-out;
+
+			transition: width 0.4s ease-in-out; }
+		input[type = text]{
+			margin-left: 200px;
+		}
+
+		input[type = text]:focus{
+			width: 60%
+		}
+		table,th,td{
+			border: 5px solid black;
+			border-collapse: collapse;
+		}	
+		th,td {
+			padding: 12px;
+			text-align:left;
+		}
+		.jumbotron{background-color: #FFDAB9}
+		.bg-grey {background-color: #f6f6f6}
+		.bg-darkgrey{background: #FFE4B5}
+		.bg-darkblue{background: #e6e6ff}
+	</style>
+</head>
+<body>
+<div class="container">
+<div class="jumbotron text-center">
+<marquee scrollamount= "10" direction="left" behaviour="scroll">
+<img src="images/8.jpg" class="img-rounded" align="middle" alt="Cinque Terre" width="800px" height="300px">
+</marquee> 
+</div>
+<div class="container">
+<div class="bg-darkblue">
+<center><h2>WELCOME to home page</h2></center>
+<br>
+<br>
+<center><h3>Would you like to view the details?</h3></center>
+<a href="/projectTwo/loginToHomePage" media="GET"><center><h4>Click here!!!!</h4></center></a>
+<br>
+<br>
+<br>
+<center><h3>Would you like to edit the details?</h3></center>
+<a href="/projectTwo/editDetails" media="GET"><center><h4>Click here!!!!</h4></center></a>
+<br>
+<br>
+<br>
+<form action = "/projectTwo/search" media="GET">
+<div>
+<label for="Search"></label>
+<input type="text" name="Search" placeholder="Search by First,Middle,Last names,Designation,Role,Age,Salary,Email ID and Contact Details">
+<table style="width:100%">
+				<caption>SEARCH LIST</caption>
+				<tr>
+				<th>First Name</th>
+				<th>Middle Name</th>
+				<th>Last Name</th> 
+				<th>Age</th>
+				<th>Designation</th>
+				<th>Role</th>
+				<th>Salary</th>
+				<th>Email ID</th>
+				<th>Contact Details</th>
+				</tr> 
+				</table>
+</div> 
+<br>
+<br>
+<div method="POST" action="/projectTwo/deleteUser">
+<center><label for="emailId">Delete User Email Id</label>
+<input type="email" name="emailId">
+<br>
+<br>
+<button type="submit" >Delete User</button></center>
+</div>
+<br>
+<br>
+<br>
+</form>
+<br>
+<br>
+<br>
+</body>
+</html>
